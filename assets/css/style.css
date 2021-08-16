@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background: url(/assets/bg-img.jpg) center/cover no-repeat;
+}
+
+h2{
+    letter-spacing: 2px;
+    padding: 1rem 0;
+    opacity: 0.9;
+}
+.text{
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 0.5rem 0;
+}
+button{
+    border: none;
+    outline: 0;
+    display: block;
+    margin: 1.5rem 0;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #c81d25;
+    color: #fff;
+    padding: 0.85rem 3rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.45s ease-in-out;
+}
+
+.main-wrapper{
+    min-height: 100vh;
+    margin: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-row{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 3rem 0;
+    max-width: 1080px;
+    box-shadow: 0 0 20px -3px rgba(161, 161, 161, 0.67);
+    border-radius: 8px;
+}
+
+.form-row > div {
+    padding: 2rem 2.8rem;
+}
+
+.form-col-right{
+    flex: 1;
+    background: #c81d25;
+    color: #fff;
+}
+
+.form-col-left h2{
+    color: #c81d25;
+}
+
+.form-item{
+    margin: 1.5rem 0;
+}
+
+.form-item label{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    display: block;
+}
+
+.form-group{
+    padding: 0.5rem 0;
+    display: grid;
+    grid-template-columns: 25px auto;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
