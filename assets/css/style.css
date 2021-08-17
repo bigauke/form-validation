@@ -90,4 +90,97 @@ button{
     grid-template-columns: 25px auto;
     align-items: center;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.form-group span{
+    opacity: 0.8;
+}
+
+.form-control{
+    width: 100%;
+    border: none;
+    outline: 0;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-left: 0.4rem;
+}
+
+.form-control::placeholder{
+    opacity: 0.8;
+    text-transform: capitalize;
+}
+
+.submission-status{
+    margin-top: 0.6rem;
+    padding: 0.6rem 0;
+    letter-spacing: 1px;
+    display: block;
+    font-weight: 500;
+    visibility: hidden;
+}
+
+#submit-btn{
+    border-color: #c81d25;
+    margin-top: 0.6rem;
+}
+
+#submit-btn:hover{
+    border-color: #c81d25;
+    background: #fff;
+    color: #c81d25;
+}
+
+#login-btn:hover{
+    background: #fff;
+    color: #c81d25;
+}
+
+/* Media Queries*/
+@media screen and (min-width: 600px){
+    .form-item-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.8rem;
+    }
+    .form-item{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main-wrapper{
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and ( min-width: 992px){
+    .form-row{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .form-col-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* MENSAGENS*/
+.error{
+    border-color: #c81d25;
+}
+.success{
+    border-color: #28a745;
+}
+.errorMessage{
+    visibility: visible;
+    color: #c81d25;
+}
+.successMessage{
+    visibility: visible;
+    color: #28a745;
 }
